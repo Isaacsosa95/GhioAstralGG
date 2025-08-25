@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GhioAstral - Servicios profesionales de  astrología y consultas espirituales.">
+    <meta name="keywords" content="astrología, numerología, consultas espirituales, carta astral, compatibilidad amorosa, limpieza energética">
+    <title>GhioAstral - Descubre tu Destino | Tu aliado astrológico</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="GhioAstral - Tu aliado astrológico">
+    <meta property="og:description" content="Servicios profesionales de astrología y consultas espirituales.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/logo_3.png">
+    
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Animación de estrellas -->
+        <div class="stars"></div>
+        
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <div class="nav-brand">
+                        <div class="badge">
+                                <a href="#"><img src="./img/logo_1.png" alt=""></a>
+                            </div>
+                    </div>
+                    
+                    <!-- Desktop Menu -->
+                    <div class="nav-menu desktop-menu">
+                        <button class="nav-link active" data-section="inicio">Inicio</button>
+                        <button class="nav-link" data-section="servicios">Servicios</button>
+                        <button class="nav-link" data-section="sobre-mi">Sobre Mí</button>
+                        <button class="nav-link" data-section="testimonios">Testimonios</button>
+                        <button class="nav-link" data-section="contacto">Contacto</button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                        <i data-lucide="x" class="close-icon hidden"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-menu hidden">
+                    <button class="nav-link mobile-link active" data-section="inicio">Inicio</button>
+                    <button class="nav-link mobile-link" data-section="servicios">Servicios</button>
+                    <button class="nav-link mobile-link" data-section="sobre-mi">Sobre Mí</button>
+                    <button class="nav-link mobile-link" data-section="testimonios">Testimonios</button>
+                    <button class="nav-link mobile-link" data-section="contacto">Contacto</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        GhioAstral
+                        <span class="hero-gradient">Astral</span>
+                    </h2>
+                    <h2 class="hero-title">
+                        Tu aliado
+                        <span class="hero-gradient">astrológico</span>
+                    </h2>
+                    <p class="hero-description">
+                        Conecta con tu verdadero yo a través de la sabiduría ancestral del tarot, la astrología y las artes místicas
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" data-section="servicios">
+                            Explorar Servicios
+                        </button>
+                        <button class="btn-secondary" data-section="contacto">
+                            Consulta Gratuita
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <i data-lucide="chevron-down" class="scroll-icon"></i>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        Servicios <span class="text-amber">astrológicos</span>
+                    </h3>
+                    <p class="section-description">
+                        Cada consulta es una puerta hacia el autoconocimiento y la transformación personal
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="star"></i>
+                        </div>
+                        <h4 class="service-title">Lectura de Tarot</h4>
+                        <p class="service-description">Descubre los misterios de tu pasado, presente y futuro a través de las cartas del tarot.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $25</span>
+                            <button class="service-btn">Reservar</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="moon"></i>
+                        </div>
+                        <h4 class="service-title">Carta Astral</h4>
+                        <p class="service-description">Análisis completo de tu personalidad y destino basado en tu fecha de nacimiento.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $35</span>
+                            <button class="service-btn">Reservar</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="sun"></i>
+                        </div>
+                        <h4 class="service-title">Numerología</h4>
+                        <p class="service-description">Comprende el significado oculto de los números en tu vida y su influencia.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $20</span>
+                            <button class="service-btn">Reservar</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="eye"></i>
+                        </div>
+                        <h4 class="service-title">Consulta Espiritual</h4>
+                        <p class="service-description">Sesiones personalizadas para encontrar claridad y equilibrio en tu camino.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $40</span>
+                            <button class="service-btn">Reservar</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <h4 class="service-title">Compatibilidad</h4>
+                        <p class="service-description">Análisis de relaciones y compatibilidad amorosa a través de la astrología.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $30</span>
+                            <button class="service-btn">Reservar</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h4 class="service-title">Limpieza Energética</h4>
+                        <p class="service-description">Ritual de purificación para eliminar energías negativas y atraer positividad.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $45</span>
+                            <button class="service-btn">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre-mi" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h3 class="section-title">
+                            Sobre <span class="text-amber">Mí</span>
+                        </h3>
+                        <p class="about-text">
+                            Con más de 15 años de experiencia en las artes místicas, he dedicado mi vida a ayudar a las personas 
+                            a encontrar claridad, propósito y sanación a través de la sabiduría ancestral.
+                        </p>
+                        <p class="about-text">
+                            Mi don especial me permite conectar con las energías universales y ofrecer guía precisa y compasiva 
+                            a quienes buscan respuestas en su camino espiritual.
+                        </p>
+                        <div class="about-badges">
+                            <div class="badge">
+                                <span>15+ años experiencia</span>
+                            </div>
+                            <div class="badge">
+                                <span>1000+ consultas</span>
+                            </div>
+                            <div class="badge">
+                                <span>Certificada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="star" class="placeholder-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eclipse - horoscope -->
+        <section id="testimonios" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        Horóscopo eclipse lunar <span class="text-amber">del 28 de octubre 2023</span>
+                    </h3>
+                    <p class="section-description">
+                        "La astrología se apoya en una concepción del cosmos como manifestación coherente de inteligencia creadora, finalidad y significado, que se expresa mediante una compleja correspondencia entre configuraciones astronómicas y experiencia humana" Richard Tarnas, 2006.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <img src="./img/sodiacIcons/aries.png" alt="sodiac signal Aries" class="quote-icon">
+                        <p class="testimonial-text">Aries (Del 21 de marzo al 20 de abril)</p>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-name">Sol y Ascendente Aries, El eclipse lunar de esta semana, tiende activar la solución desde el diálogo sincero, direccionado a un fin común, respecto a situación kármica, que dificultad tu desarrollo laboral, profesional y reputación; logrando un posible ascenso o tu participación en nuevo proyecto laboral. Tendencia a sufrir accidentes en los dedos de las manos.</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <img src="./img/sodiacIcons/cancer.png" alt="sodiac signal Cáncer" class="quote-icon">
+                        <p class="testimonial-text">Cáncer (del 22 de junio al 22 de julio)</p>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-name">Sol y Ascendente Cáncer, El eclipse lunar de esta semana, tiende activar solucionar adversidades en tu entorno inmediato, hermanos, vecinos, desde tu tribu, tu patriarcado e incursionando en nuevas áreas laborales que tienden a impulsar una mudanza a corto plazo.</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <img src="./img/sodiacIcons/leo.png" alt="sodiac signal Leo" class="quote-icon">
+                        <p class="testimonial-text">Leo (Del 23 de julio al 22 de agosto)"</p>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-name">Sol y Ascendente Leo, El eclipse lunar de esta semana, tiende activar la solución de dificultades en el hogar, negociando acuerdos en tus relaciones familiares, respetando la posición de cada uno de ellos.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        Conecta <span class="text-amber">Conmigo</span>
+                    </h3>
+                    <p class="section-description">
+                        Da el primer paso hacia tu transformación. Estoy aquí para guiarte
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-title">Teléfono</h4>
+                                <p class="contact-text">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-title">Email</h4>
+                                <p class="contact-text">consultas@astralmystic.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-title">Ubicación</h4>
+                                <p class="contact-text">Consultas presenciales y virtuales</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Nombre</label>
+                            <input name="nombre" type="text" class="form-input" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input name="email" type="email" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Servicio de Interés</label>
+                            <select name="servicio" class="form-input" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="tarot">Lectura de Tarot</option>
+                                <option value="astral">Carta Astral</option>
+                                <option value="numerologia">Numerología</option>
+                                <option value="consulta">Consulta Espiritual</option>
+                                <option value="compatibilidad">Compatibilidad</option>
+                                <option value="limpieza">Limpieza Energética</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mensaje</label>
+                            <textarea name="mensaje" rows="4" class="form-input" placeholder="Cuéntame brevemente lo que necesitas..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            Enviar Consulta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <i data-lucide="star" class="footer-icon"></i>
+                        <h2 class="footer-title">GhioAstral</h2>
+                    </div>
+                    <p class="footer-description">
+                        Guiándote hacia tu verdadero destino con sabiduría y compasión
+                    </p>
+                    <p class="footer-copyright">
+                        © 2025 GhioAstral.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
