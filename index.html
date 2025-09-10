@@ -3,27 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GhioAstral - Servicios profesionales de  astrología y consultas espirituales.">
-    <meta name="keywords" content="astrología, numerología, consultas espirituales, carta astral, compatibilidad amorosa, limpieza energética">
+    <meta name="description" content="GhioAstral - Servicios profesionales de astrología, tarot y consultas espirituales. Carta astral, lectura de tarot, numerología y más. ¡Descubre tu destino!">
+    <meta name="keywords" content="astrología, tarot, numerología, consultas espirituales, carta astral, compatibilidad amorosa, limpieza energética, horoscopo, signos zodiacales, lectura cartas">
+    <meta name="author" content="GhioAstral">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <meta name="geo.region" content="ES">
+    <meta name="geo.placename" content="España">
     <title>GhioAstral - Descubre tu Destino | Tu aliado astrológico</title>
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="GhioAstral - Tu aliado astrológico">
-    <meta property="og:description" content="Servicios profesionales de astrología y consultas espirituales.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./img/logo_3.png">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ghioastrall.github.io/GhioAstralGG/">
     
-    <!-- Preconnect para optimización -->
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./img/logo_1.png">
+    <link rel="apple-touch-icon" href="./img/logo_1.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#fbbf24">
+    <meta name="msapplication-TileColor" content="#fbbf24">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- iOS PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="GhioAstral">
+    <link rel="apple-touch-icon" href="./img/logo_1.png">
+    <link rel="apple-touch-startup-image" href="./img/logo_3.png">
+    
+    <!-- Windows PWA Support -->
+    <meta name="msapplication-starturl" content="/">
+    <meta name="msapplication-config" content="./browserconfig.xml">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="GhioAstral - Descubre tu Destino | Tu aliado astrológico">
+    <meta property="og:description" content="Servicios profesionales de astrología, tarot y consultas espirituales. Carta astral, lectura de tarot, numerología y más. ¡Descubre tu destino!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghioastrall.github.io/GhioAstralGG/">
+    <meta property="og:image" content="https://ghioastrall.github.io/GhioAstralGG/img/logo_3.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="GhioAstral">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GhioAstral - Descubre tu Destino | Tu aliado astrológico">
+    <meta name="twitter:description" content="Servicios profesionales de astrología, tarot y consultas espirituales. ¡Descubre tu destino!">
+    <meta name="twitter:image" content="https://ghioastrall.github.io/GhioAstralGG/img/logo_3.png">
+    <meta name="twitter:creator" content="@GhioAstral">
+    
+    <!-- Preconnect y preload para optimización -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- Preload recursos críticos -->
+    <link rel="preload" href="./img/logo_1.png" as="image" type="image/png">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="preload" href="./js/main.js" as="script">
+    
+    <!-- DNS prefetch para recursos externos -->
+    <link rel="dns-prefetch" href="https://wa.me">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            page_title: 'GhioAstral - Tu aliado astrológico',
+            page_location: window.location.href,
+            send_page_view: true,
+            anonymize_ip: true,
+            allow_google_signals: false,
+            allow_ad_personalization_signals: false
+        });
+    </script>
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
     <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GhioAstral",
+        "description": "Servicios profesionales de astrología, tarot y consultas espirituales. Carta astral, lectura de tarot, numerología y más.",
+        "url": "https://ghioastrall.github.io/GhioAstralGG/",
+        "logo": "https://ghioastrall.github.io/GhioAstralGG/img/logo_3.png",
+        "image": "https://ghioastrall.github.io/GhioAstralGG/img/logo_3.png",
+        "telephone": "+34644140027",
+        "priceRange": "$20-$45",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "España"
+        },
+        "availableLanguage": "Spanish",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios Astrológicos",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Lectura de Tarot",
+                        "description": "Descubre los misterios de tu pasado, presente y futuro a través de las cartas del tarot."
+                    },
+                    "price": "25",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Carta Astral",
+                        "description": "Análisis completo de tu personalidad y destino basado en tu fecha de nacimiento."
+                    },
+                    "price": "35",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Numerología",
+                        "description": "Comprende el significado oculto de los números en tu vida y su influencia."
+                    },
+                    "price": "20",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Consulta Espiritual",
+                        "description": "Sesiones personalizadas para encontrar claridad y equilibrio en tu camino."
+                    },
+                    "price": "40",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Compatibilidad",
+                        "description": "Análisis de relaciones y compatibilidad amorosa a través de la astrología."
+                    },
+                    "price": "30",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Limpieza Energética",
+                        "description": "Ritual de purificación para eliminar energías negativas y atraer positividad."
+                    },
+                    "price": "45",
+                    "priceCurrency": "USD"
+                }
+            ]
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+34644140027",
+            "contactType": "customer service",
+            "availableLanguage": "Spanish"
+        },
+        "sameAs": [
+            "https://wa.me/34644140027"
+        ]
+    }
+    </script>
 </head>
 <body>
     <div class="app">
@@ -237,7 +399,7 @@
 
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
-                        <img src="./img/sodiacIcons/aries.png" alt="sodiac signal Aries" class="quote-icon">
+                        <img data-src="./img/sodiacIcons/aries.png" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmJiZjI0IiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8L3N2Zz4K" alt="zodiac signal Aries" class="quote-icon lazy" loading="lazy">
                         <p class="testimonial-text">Aries (Del 21 de marzo al 20 de abril)</p>
                         <div class="testimonial-footer">
                             <span class="testimonial-name">Sol y Ascendente Aries, El eclipse lunar de esta semana, tiende activar la solución desde el diálogo sincero, direccionado a un fin común, respecto a situación kármica, que dificultad tu desarrollo laboral, profesional y reputación; logrando un posible ascenso o tu participación en nuevo proyecto laboral. Tendencia a sufrir accidentes en los dedos de las manos.</span>
@@ -245,7 +407,7 @@
                     </div>
 
                     <div class="testimonial-card">
-                        <img src="./img/sodiacIcons/cancer.png" alt="sodiac signal Cáncer" class="quote-icon">
+                        <img data-src="./img/sodiacIcons/cancer.png" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmJiZjI0IiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8L3N2Zz4K" alt="zodiac signal Cáncer" class="quote-icon lazy" loading="lazy">
                         <p class="testimonial-text">Cáncer (del 22 de junio al 22 de julio)</p>
                         <div class="testimonial-footer">
                             <span class="testimonial-name">Sol y Ascendente Cáncer, El eclipse lunar de esta semana, tiende activar solucionar adversidades en tu entorno inmediato, hermanos, vecinos, desde tu tribu, tu patriarcado e incursionando en nuevas áreas laborales que tienden a impulsar una mudanza a corto plazo.</span>
@@ -253,8 +415,8 @@
                     </div>
 
                     <div class="testimonial-card">
-                        <img src="./img/sodiacIcons/leo.png" alt="sodiac signal Leo" class="quote-icon">
-                        <p class="testimonial-text">Leo (Del 23 de julio al 22 de agosto)"</p>
+                        <img data-src="./img/sodiacIcons/leo.png" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmJiZjI0IiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8L3N2Zz4K" alt="zodiac signal Leo" class="quote-icon lazy" loading="lazy">
+                        <p class="testimonial-text">Leo (Del 23 de julio al 22 de agosto)</p>
                         <div class="testimonial-footer">
                             <span class="testimonial-name">Sol y Ascendente Leo, El eclipse lunar de esta semana, tiende activar la solución de dificultades en el hogar, negociando acuerdos en tus relaciones familiares, respetando la posición de cada uno de ellos.</span>
                         </div>

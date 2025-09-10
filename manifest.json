@@ -1,0 +1,106 @@
+{
+    "name": "GhioAstral - Tu aliado astrológico",
+    "short_name": "GhioAstral",
+    "description": "Servicios profesionales de astrología, tarot y consultas espirituales. Descubre tu destino con GhioAstral.",
+    "version": "1.0.0",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#fbbf24",
+    "background_color": "#1e1b4b",
+    "lang": "es",
+    "categories": ["lifestyle", "entertainment", "spirituality"],
+    "icons": [
+        {
+            "src": "./img/logo_1.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./img/logo_2.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./img/logo_3.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./img/screenshot-mobile.png",
+            "sizes": "390x844",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Vista móvil de GhioAstral"
+        },
+        {
+            "src": "./img/screenshot-desktop.png", 
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Vista de escritorio de GhioAstral"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Consulta Rápida",
+            "short_name": "Consulta",
+            "description": "Acceso directo para hacer una consulta",
+            "url": "/#contacto",
+            "icons": [
+                {
+                    "src": "./img/logo_1.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Ver Servicios",
+            "short_name": "Servicios",
+            "description": "Explorar todos los servicios disponibles",
+            "url": "/#servicios",
+            "icons": [
+                {
+                    "src": "./img/logo_1.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Horóscopo",
+            "short_name": "Horóscopo",
+            "description": "Ver horóscopo actualizado",
+            "url": "/#testimonios",
+            "icons": [
+                {
+                    "src": "./img/logo_1.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "edge_side_panel": {
+        "preferred_width": 400
+    },
+    "launch_handler": {
+        "client_mode": ["navigate-existing", "auto"]
+    },
+    "handle_links": "preferred",
+    "protocol_handlers": [
+        {
+            "protocol": "web+ghioastral",
+            "url": "/?action=%s"
+        }
+    ]
+}

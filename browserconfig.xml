@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="./img/logo_1.png"/>
+            <square310x310logo src="./img/logo_3.png"/>
+            <wide310x150logo src="./img/logo_2.png"/>
+            <TileColor>#fbbf24</TileColor>
+        </tile>
+        <notification>
+            <polling-uri src="https://ghioastrall.github.io/GhioAstralGG/"/>
+            <frequency>30</frequency>
+            <cycle>1</cycle>
+        </notification>
+    </msapplication>
+</browserconfig>

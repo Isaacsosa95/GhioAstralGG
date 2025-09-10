@@ -1,0 +1,73 @@
+{
+  "name": "ghioastral",
+  "version": "1.0.0",
+  "description": "Servicios profesionales de astrología, tarot y consultas espirituales",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm run watch",
+    "build": "npm run clean && npm run minify:css && npm run minify:js && npm run optimize:images && npm run copy:files",
+    "clean": "rimraf dist",
+    "minify:css": "cleancss -o dist/css/style.min.css css/style.css",
+    "minify:js": "uglifyjs js/main.js -o dist/js/main.min.js --compress --mangle --source-map",
+    "optimize:images": "imagemin img/**/* --out-dir=dist/img --plugin=imagemin-webp --plugin=imagemin-pngquant --plugin=imagemin-mozjpeg",
+    "copy:files": "copyfiles -u 1 \"*.html\" \"*.json\" \"*.xml\" \"sw.js\" \"img/**/*\" dist/",
+    "watch": "npm-watch",
+    "serve": "http-server dist -p 8080 -c-1",
+    "start": "npm run build && npm run serve",
+    "lighthouse": "lighthouse http://localhost:8080 --output html --output-path ./reports/lighthouse-report.html",
+    "analyze": "npm run build && bundlesize",
+    "test": "echo \"No tests specified\" && exit 0",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "css",
+        "js", 
+        "*.html"
+      ],
+      "extensions": "css,js,html",
+      "quiet": false
+    }
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/css/style.min.css",
+      "maxSize": "30kb"
+    },
+    {
+      "path": "./dist/js/main.min.js", 
+      "maxSize": "25kb"
+    }
+  ],
+  "keywords": [
+    "astrologia",
+    "tarot",
+    "numerologia", 
+    "consultas-espirituales",
+    "horoscopo",
+    "pwa"
+  ],
+  "author": "GhioAstral",
+  "license": "MIT",
+  "devDependencies": {
+    "bundlesize": "^0.18.1",
+    "clean-css-cli": "^5.6.2",
+    "copyfiles": "^2.4.1",
+    "gh-pages": "^6.0.0",
+    "http-server": "^14.1.1",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^8.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0", 
+    "imagemin-webp": "^8.0.0",
+    "lighthouse": "^11.0.0",
+    "npm-watch": "^0.11.0",
+    "rimraf": "^5.0.5",
+    "uglify-js": "^3.17.4"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
